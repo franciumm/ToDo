@@ -1,6 +1,6 @@
-# todo_c7_mon
+# ToDo
 
-A new Flutter project.
+ToDo Flutter Project
 
 ## Getting Started
 
