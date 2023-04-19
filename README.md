@@ -3,6 +3,10 @@
 ToDo Flutter project.
 
 
+A Flutter todo app Using firebase for local offline database
+Dark and Light Theme options and edit on tasks and delete tasks and choose date for tasks option 
+
+
 
 This project is a starting point for a Flutter application.
 
