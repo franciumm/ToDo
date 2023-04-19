@@ -1,8 +1,8 @@
-# todo_c7_mon
+# ToDo App
 
-A new Flutter project.
+ToDo Flutter project.
 
-## Getting Started
+
 
 This project is a starting point for a Flutter application.
 
