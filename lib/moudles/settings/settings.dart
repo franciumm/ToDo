@@ -36,7 +36,7 @@ class SettingsTab extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: theme == MyThemeData.DarkTheme
                         ? WHITE_COLOR
-                        : BLACK_COLOR),
+                        : PRIMARY_DARK),
               ),
               SizedBox(
                 height: 10,
@@ -88,7 +88,7 @@ class SettingsTab extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: theme == MyThemeData.DarkTheme
                         ? WHITE_COLOR
-                        : BLACK_COLOR),
+                        : PRIMARY_DARK),
               ),
               SizedBox(
                 height: 10,

@@ -8,7 +8,7 @@ import 'package:todo_c7_mon/moudles/settings/settings.dart';
 import 'package:todo_c7_mon/provider/Prov.dart';
 import 'layout/home_layout.dart';
 
-var theme = MyThemeData.DarkTheme;
+var theme = MyThemeData.lightTheme;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +25,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var prov = Provider.of<Provcl>(context);
     return MaterialApp(
       initialRoute: HomeLayout.routeName,
       routes: {
@@ -35,7 +34,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: theme,
       darkTheme: MyThemeData.DarkTheme,
-      themeMode: ThemeMode.light,
     );
   }
 }

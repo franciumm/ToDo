@@ -73,10 +73,8 @@ class EditTab extends StatelessWidget {
                       key: formkey,
                       child: Container(
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: theme == MyThemeData.lightTheme
-                                ? Colors.white
-                                : PRIMARY_BLACK),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
                         child: Padding(
                           padding: const EdgeInsets.all(28),
                           child: Column(
@@ -149,7 +147,13 @@ class EditTab extends StatelessWidget {
                                         padding: const EdgeInsets.all(8.0),
                                         child: Text(
                                           '${tsk.hour} : ${tsk.min}',
-                                          style: TextStyle(fontSize: 20),
+                                          style: TextStyle(
+                                            fontSize: 20,
+                                            color:
+                                                theme == MyThemeData.lightTheme
+                                                    ? PRIMARY_COLOR
+                                                    : Colors.white,
+                                          ),
                                         ),
                                       ))),
                               SizedBox(height: 100),

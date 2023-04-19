@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_c7_mon/provider/BtmNavProv.dart';
 import 'package:todo_c7_mon/shared/Components/AddTask.dart';
 import 'package:todo_c7_mon/shared/styles/colors.dart';
 import 'package:todo_c7_mon/shared/styles/my_theme.dart';
@@ -9,32 +8,23 @@ import '../moudles/settings/settings.dart';
 import '../moudles/tasks_list/tasks_list.dart';
 import '../provider/Prov.dart';
 
+Color bckclr = theme == MyThemeData.DarkTheme ? PRIMARY_DARK : GREEN_BACKGROUND;
 int indexbtm = 0;
 
-class HomeLayout extends StatefulWidget {
+class HomeLayout extends StatelessWidget {
   static const String routeName = 'Home';
-
-  @override
-  State<HomeLayout> createState() => _HomeLayoutState();
-}
-
-bool IsDark = false;
-
-class _HomeLayoutState extends State<HomeLayout> {
-  Color bckclr =
-      theme == MyThemeData.DarkTheme ? PRIMARY_DARK : GREEN_BACKGROUND;
-
   @override
   Widget build(BuildContext context) {
     List<Widget> aBdy = [HomePg(), SettingsTab()];
     return ChangeNotifierProvider(
-      create: (context) => BtmProv(),
+      create: (context) => Provcl(),
       builder: (context, child) {
-        var btmprov = Provider.of<BtmProv>(context);
         var prov = Provider.of<Provcl>(context);
         return Scaffold(
             extendBody: true,
-            backgroundColor: bckclr,
+            backgroundColor: theme == MyThemeData.DarkTheme
+                ? PRIMARY_DARK
+                : GREEN_BACKGROUND,
             floatingActionButton: FloatingActionButton(
               shape: StadiumBorder(
                   side: BorderSide(
@@ -61,7 +51,7 @@ class _HomeLayoutState extends State<HomeLayout> {
               shape: const CircularNotchedRectangle(),
               child: BottomNavigationBar(
                 onTap: (index) {
-                  btmprov.btmnav(index);
+                  prov.btmnav(index);
                 },
                 currentIndex: indexbtm,
                 backgroundColor: Colors.transparent,
