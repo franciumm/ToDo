@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:slidable_button/slidable_button.dart';
 import 'package:todo_c7_mon/Models/Tasks.dart';
 

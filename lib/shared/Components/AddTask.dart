@@ -1,12 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:todo_c7_mon/Models/Tasks.dart';
 import 'package:todo_c7_mon/main.dart';
 import 'package:todo_c7_mon/shared/styles/colors.dart';
 import 'package:todo_c7_mon/shared/styles/my_theme.dart';
 
-import '../../provider/Prov.dart';
 import '../network/local/firebase_utl.dart';
 
 var formkey = GlobalKey<FormState>();

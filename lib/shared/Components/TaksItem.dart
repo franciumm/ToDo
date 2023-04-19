@@ -1,15 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_c7_mon/shared/Components/AddTask.dart';
 import 'package:todo_c7_mon/shared/styles/colors.dart';
 import 'package:todo_c7_mon/shared/styles/my_theme.dart';
 import '../../Models/Tasks.dart';
 import '../../main.dart';
 import '../../moudles/Edit Page/Edit.dart';
-import '../../moudles/tasks_list/tasks_list.dart';
 import '../../provider/Prov.dart';
 import '../network/local/firebase_utl.dart';
 
